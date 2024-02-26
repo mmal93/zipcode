@@ -1,0 +1,19 @@
+image: ruby:2.6
+
+stages:   
+  - deploy-uat
+
+before_script:
+  - apt-get update -qy
+  - apt-get install -y lftp
+
+deploy-uat:
+  stage: deploy-uat
+  only:
+    - develop
+  script:
+    - lftp -e "set ftp:ssl-allow no; open $FTP_HOST; user $FTP_USERNAME '$FTP_PASSWORD'; mirror -Rev ./  --ignore-time --parallel=10 --exclude-glob README.md --exclude-glob .git* --exclude wp-config.php --exclude .htaccess --exclude .git/ --exclude wp-content/*; bye"
+    - lftp -e "set ftp:ssl-allow no; open $FTP_HOST; user $FTP_USERNAME '$FTP_PASSWORD'; mirror -Rev ./wp-content/plugins/ wp-content/plugins/ --ignore-time --parallel=10 --exclude .htaccess; bye"
+    - lftp -e "set ftp:ssl-allow no; open $FTP_HOST; user $FTP_USERNAME '$FTP_PASSWORD'; mirror -Rev ./wp-content/themes/ wp-content/themes/ --ignore-time --parallel=10 --exclude .htaccess; bye"  
+  tags:
+    - runner

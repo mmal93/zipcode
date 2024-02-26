@@ -1,0 +1,18 @@
+{
+    "name": "acf/explore",
+    "title": "Explore Section",
+    "description": "A custom repeater section",
+    "style": [ "file:./explore.css" ],
+    "category": "zipcode",
+    "icon": "align-full-width",
+    "keywords": ["list", "explore", "consulting", "developing", "investing"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "explore.php"
+    },
+    "supports": {
+        "className": true,
+        "anchor"   : true
+    }
+
+}

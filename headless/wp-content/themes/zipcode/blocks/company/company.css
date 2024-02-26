@@ -1,0 +1,107 @@
+.image-box {
+  height: 0;
+  padding-bottom: 100%;
+  position: relative
+}
+
+.image-box img {
+  height: 100%;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 100%
+}
+
+.section-company {
+  background: url(/img/img-4.jpg);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 0 0 32px 32px;
+  min-height: 100vh;
+  padding: 85px 0
+}
+
+.section-company .company-box {
+  margin: 106px auto auto;
+  max-width: 1404px;
+  position: relative
+}
+
+.section-company .title {
+  color: #fff;
+  font-family: Tiempos Headline;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 60px;
+  margin: auto;
+  max-width: 700px;
+  text-align: center
+}
+
+.section-company .image-box {
+  padding-bottom: 370px;
+  position: relative
+}
+
+.section-company .text {
+  color: #fff;
+  font-family: Buenos Aires;
+  font-size: 35px;
+  font-weight: 400;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 46px;
+  position: absolute;
+  text-align: center;
+  top: -15px;
+  z-index: 2
+}
+
+.section-company .text.text--middle {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%)
+}
+
+.section-company .text.text--bottom {
+  bottom: 0;
+  left: auto;
+  right: 0;
+  top: auto
+}
+
+.section-company .c-image {
+  margin: auto;
+  max-width: 300px;
+  position: relative;
+  z-index: 2
+}
+
+.section-company .c-text {
+  margin-left: auto;
+  margin-right: 16%;
+  max-width: 565px
+}
+
+.section-company .c-text,.section-company .c-text a {
+  color: #fff;
+  font-family: Buenos Aires;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: .28px;
+  line-height: 25.612px
+}
+
+.section-company .c-text a {
+  border: .711px solid #fff;
+  border-radius: 71.146px;
+  padding: 14px 22px
+}
+
+.section-company .c-text a .icon {
+  margin-left: 20px
+}

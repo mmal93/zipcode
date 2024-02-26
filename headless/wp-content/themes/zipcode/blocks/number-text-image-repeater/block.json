@@ -1,0 +1,18 @@
+{
+    "name": "acf/number-text-image-repeater",
+    "title": "Number - Content Repeater",
+    "description": "A custom repeater section",
+    "style": [ "file:./number-text-image-repeater.css" ],
+    "category": "zipcode",
+    "icon": "controls-repeat",
+    "keywords": ["list", "category", "number-text-image-repeater", "banner", "image", "right"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "number-text-image-repeater.php"
+    },
+    "supports": {
+        "className": true,
+        "anchor"   : true
+    }
+
+}

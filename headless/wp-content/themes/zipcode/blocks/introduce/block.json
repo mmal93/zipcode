@@ -1,0 +1,18 @@
+{
+    "name": "acf/introduce",
+    "title": "Introduce - repeater",
+    "description": "A custom repeater section",
+    "style": [ "file:./introduce.css" ],
+    "category": "zipcode",
+    "icon": "controls-repeat",
+    "keywords": ["list", "introduce", "repeat", "image", "text"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "introduce.php"
+    },
+    "supports": {
+        "className": true,
+        "anchor"   : true
+    }
+
+}

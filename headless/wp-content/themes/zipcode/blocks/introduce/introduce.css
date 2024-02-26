@@ -1,0 +1,83 @@
+.section-introduce {
+  background-color: #fff;
+  border-radius: 32px;
+  padding: 105px 0;
+  position: relative;
+  z-index: 2;
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1730px;
+  padding-left: 36px;
+  padding-right: 36px;
+}
+.section-introduce .image-with-text-component {
+  margin-bottom: 100px;
+}
+.text-left {
+  text-align: left;
+}
+.section-introduce .text-left .d-flex {
+  flex-direction: row-reverse;
+}
+.section-introduce .d-flex {
+  column-gap: 150px;
+  row-gap: 100px;
+}
+.d-flex {
+  display: flex;
+}
+.section-introduce .col-right {
+  width: calc(55.5% - 75px);
+}
+.section-introduce .image-with-text-component .image-box {
+  padding-bottom: 75.6723716381%;
+}
+.image-box .bg {
+  background-size: contain;
+  content: "";
+  height: 590px;
+  position: absolute;
+  right: -31px;
+  top: -31px;
+  width: 297px;
+  z-index: -1;
+}
+.overlay-bottom-center {
+  position: relative;
+}
+.overlay-bottom-center .bg {
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  bottom: -34px;
+  content: "";
+  height: 500px;
+  left: -51px;
+  position: absolute;
+  width: calc(100% + 84px);
+  z-index: -1;
+}
+image-box img {
+  height: 100%;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.section-introduce .image-with-text-component {
+  margin-bottom: 100px;
+}
+.section-introduce .col-left {
+  width: calc(45.5% - 75px);
+}
+.image-with-text-component .col-text {
+  font-family: Buenos Aires;
+  font-size: 36px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 46px;
+  text-align: left;
+}

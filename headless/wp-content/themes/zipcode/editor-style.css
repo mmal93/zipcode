@@ -1,0 +1,19 @@
+/* use prefix .editor-styles-wrapper for all editor layout */
+/* common style */
+.editor-styles-wrapper a{
+
+}
+
+.editor-styles-wrapper .button {
+    /*general style here*/
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    min-width: 80px;
+}
+/* end common style */
+/* style for youtube-slider block */
+.editor-styles-wrapper .youtube-slider {
+    /**/
+}
+/* end style for youtube-slider block */

@@ -1,0 +1,17 @@
+{
+    "name": "acf/our-team",
+    "title": "Slider Section",
+    "description": "A custom text section",
+    "style": [ "file:./our-team.css" ],
+    "category": "zipcode",
+    "icon": "groups",
+    "keywords": ["list", "person", "people", "our-team", "team", "our", "our team"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "our-team.php"
+    },
+    "supports": {
+        "className": true,
+        "anchor"   : true
+    }
+}

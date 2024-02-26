@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkzipcode=self.webpackChunkzipcode||[]).push([[3220],{3220:function(e,n,t){t.r(n);var c=t(7294);n.default=e=>{const{innerHTML:n}=e;return c.createElement("div",{className:"wpg-block wpg-b_quote",dangerouslySetInnerHTML:{__html:n}})}}}]);
+//# sourceMappingURL=3220-0a2d5f49108222c0cd85.js.map

@@ -1,0 +1,310 @@
+.projects-banner {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.projects-banner .container {
+  max-width: 1730px
+}
+
+.projects-banner .section-bkg {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1
+}
+
+.projects-banner .section-bkg img {
+  aspect-ratio: 1.77776;
+  height: 100%;
+  object-fit: cover;
+  width: 100%
+}
+
+/* .projects-items {
+  padding: 54px 0 98px
+} */
+
+.projects-items .item {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 13.5px 0
+}
+
+.projects-items .item .item-inner {
+  cursor: pointer;
+  min-width: 540px;
+  position: relative
+}
+
+.projects-items .item .item-inner img {
+  aspect-ratio: 1.779;
+  display: none;
+  height: auto;
+  margin-left: 20px;
+  margin-top: 12px;
+  object-fit: cover;
+  object-position: center;
+  vertical-align: top;
+  width: 116px
+}
+
+.projects-items .item .item-inner:hover img {
+  display: inline-flex
+}
+
+.projects-items .item .item-inner:hover .subheading {
+  margin-left: 19px
+}
+
+.projects-items .item:last-child .item-inner .subheading {
+  margin-left: 27px
+}
+
+.projects-items .item.active-popup .item-inner img {
+  display: inline-flex
+}
+
+.projects-items .item.active-popup .item-inner .subheading {
+  margin-left: 19px
+}
+
+.projects-items .item.active-popup .projects-popup {
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible
+}
+
+.projects-items .item .subheading {
+  bottom: 15px;
+  font-family: Tiempos Headline;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  left: 100%;
+  line-height: 15.936px;
+  margin-left: 7px;
+  margin-top: 7px;
+  max-width: 200px;
+  /* position: absolute; */
+  text-align: left;
+  vertical-align: top;
+  width: 100%;
+  display: contents;
+  letter-spacing: 0px;
+}
+
+.projects-items .item h3 {
+  letter-spacing: -1.5px;
+  line-height: 86.322px;
+  margin-bottom: 0;
+  font-size: 45px;
+  /* line-height: 50px; */
+}
+
+html.active-overlay {
+  overflow: hidden
+}
+
+.projects-popup {
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  left: 0;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  transform: translateY(100%);
+  transition: all .5s;
+  visibility: hidden;
+  width: 100%;
+  z-index: 101
+}
+
+.projects-popup.active-popup {
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible
+}
+
+.projects-popup .projects-popup-container {
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 31.304px;
+  color: #fff;
+  max-height: 100%;
+  overflow: hidden;
+  overflow-y: auto;
+  padding: 88px 0 91px;
+  position: relative;
+  width: 100%;
+  z-index: 3
+}
+
+.projects-popup .section-bkg {
+  border-radius: 31.304px
+}
+
+.projects-popup .container {
+  max-width: 1174px;
+  position: relative
+}
+
+.projects-popup button.projects-popup-close {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  position: absolute;
+  right: -37px;
+  top: -53px
+}
+
+.projects-popup .popup-heading {
+  display: flex;
+  flex-wrap: wrap
+}
+
+.projects-popup h4 {
+  margin: 0
+}
+
+.projects-popup .heading {
+  padding-left: 5px;
+  padding-right: 20px;
+  width: 26.7%
+}
+
+.projects-popup .popup-galleries {
+  padding-right: 43px;
+  padding-top: 18px;
+  width: 73.3%
+}
+
+.projects-popup .heading .subheading {
+  font-family: Tiempos Headline;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 17.075px;
+  margin-top: 30px;
+  position: static
+}
+
+.projects-popup .popup-galleries,.projects-popup .popup-galleries .swiper {
+  overflow: visible
+}
+
+.projects-popup .popup-galleries .swiper-slide {
+  width: auto
+}
+
+.projects-popup .popup-galleries .item-gallery img {
+  height: 332px;
+  vertical-align: top
+}
+
+.projects-popup .popup-content {
+  --gap: 88px;
+  --columns: 3;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap);
+  margin-top: 50px;
+  padding-right: 25px;
+  width: 100%
+}
+
+.projects-popup .popup-content .column {
+  border-top: 1px solid #fff;
+  padding-top: 18px;
+  width: calc(100%/var(--columns) - var(--gap) + var(--gap)/var(--columns))
+}
+
+.projects-popup .popup-content .column .h6,.projects-popup .popup-content .column h6 {
+  font-weight: 600;
+  line-height: 35.573px
+}
+
+.projects-popup .swiper .swiper-button-next,.projects-popup .swiper .swiper-button-prev {
+  background-size: contain;
+  height: 29px;
+  margin-top: -14px;
+  width: 29px
+}
+
+.projects-popup .swiper .swiper-button-next,.projects-popup .swiper .swiper-button-next:hover,.projects-popup .swiper .swiper-button-prev,.projects-popup .swiper .swiper-button-prev:hover {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyOSIgaGVpZ2h0PSIyNSIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI5IDI1Ij48cGF0aCBmaWxsPSIjZmZmIiBkPSJtMTYuNDMgMjUtMi4wNzgtMi4wNTEgOC41NTYtOC41NTZILjc1di0yLjk2OGgyMi4xNThsLTguNTU2LTguNTI5TDE2LjQzLjgxOCAyOC41MjEgMTIuOTEgMTYuNDMxIDI1WiIvPjwvc3ZnPg==)
+}
+
+.projects-popup .swiper .swiper-button-next.swiper-button-disabled,.projects-popup .swiper .swiper-button-prev.swiper-button-disabled {
+  opacity: 0
+}
+
+.projects-popup .swiper .swiper-button-prev {
+  left: -35px
+}
+
+.projects-popup .swiper .swiper-button-next {
+  right: -35px
+}
+
+.btn.visible-mobile,.btn.visible-tablet,.popup-content.visible-mobile,.visible-mobile,.visible-tablet {
+  display: none
+}
+
+@media(max-width: 1600px) {
+  .projects-banner {
+      padding-top:90px;
+      padding-bottom:90px;
+  }
+
+  .projects-banner .container {
+      max-width: 1240px
+  }
+
+  /* .projects-items {
+      padding: 69px 0 102px
+  } */
+
+  .projects-items .item {
+      margin: 0
+  }
+
+  .projects-popup .popup-content {
+      --gap: 52px;
+      margin-top: 67px;
+      padding-left: 32px;
+      padding-right: 0
+  }
+
+  .projects-popup button.projects-popup-close {
+      right: -71px
+  }
+
+  .projects-popup .container {
+      max-width: 1108px
+  }
+
+  .projects-popup .heading {
+      padding-left: 36px;
+      width: 31.4%
+  }
+
+  .projects-popup .popup-galleries {
+      padding-right: 0;
+      width: 68.6%
+  }
+
+  .projects-popup .popup-galleries .item-gallery img {
+      height: 308px
+  }
+}

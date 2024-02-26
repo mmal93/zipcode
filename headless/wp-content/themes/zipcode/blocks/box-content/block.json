@@ -1,0 +1,17 @@
+{
+    "name": "acf/box-content",
+    "title": "Box Content",
+    "description": "A custom banner section",
+    "style": [ "file:./box-content.css" ],
+    "category": "zipcode",
+    "icon": "align-pull-right",
+    "keywords": [ "box-content", "content", "text"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "box-content.php"
+    },
+    "supports": {
+        "className": true,
+        "anchor"   : true
+    }
+}

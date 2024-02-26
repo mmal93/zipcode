@@ -1,0 +1,109 @@
+.marquee-section {
+  position: relative;
+  padding-bottom: 50px;
+  margin-bottom: -50px;
+}
+.marquee-section .section-bkg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.marquee-section .section-bkg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.marquee {
+  overflow: hidden;
+  position: relative;
+  color: #333;
+  display: flex;
+  padding: 29px 0 36px;
+}
+.marquee .marquee-items {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  line-height: 50px;
+  text-align: center;
+  animation: marquee 40s linear infinite;
+  display: flex;
+  align-items: end;
+}
+.marquee .marquee-items .item {
+  color: var(--Color-neutrals-white);
+  position: relative;
+  padding: 0 54px;
+  font-size: 28px;
+  font-weight: 300;
+  font-style: normal;
+  display: flex;
+  white-space: nowrap;
+}
+.marquee .marquee-items .item p {
+  font-family: "Buenos Aires";
+  line-height: 40px;
+}
+.marquee .marquee-items .item p em {
+  font-family: "Tiempos Headline LightItalic";
+  line-height: 33.6px;
+}
+.marquee .marquee-items .item:after {
+  content: "";
+  width: 23.047px;
+  height: 26.612px;
+  position: absolute;
+  right: -10px;
+  top: 50%;
+  margin-top: -12px;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjgiIHZpZXdCb3g9IjAgMCAyNCAyOCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCjxwYXRoIGQ9Ik0wLjg5ODk4NyAwLjczNzA2MVYzLjM5Nzk3SDEyLjQyNjhMMC44OTg5ODcgMTAuMDU0MVYyNy4zNDlIMjMuOTQ1NlYyNC42OTAxSDEyLjQyMTlMMjMuOTQ0OSAxOC4wMzY4VjAuNzM3MDYxSDAuODk4OTg3WiIgZmlsbD0iI0M0RjAwMCIvPg0KPC9zdmc+DQo=);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.about-page .marquee .marquee-items .item:after {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjgiIHZpZXdCb3g9IjAgMCAyNCAyOCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCjxwYXRoIGQ9Ik0wLjg5ODk4NyAwLjczNzA2MVYzLjM5Nzk3SDEyLjQyNjhMMC44OTg5ODcgMTAuMDU0MVYyNy4zNDlIMjMuOTQ1NlYyNC42OTAxSDEyLjQyMTlMMjMuOTQ0OSAxOC4wMzY4VjAuNzM3MDYxSDAuODk4OTg3WiIgZmlsbD0iI0M0RjAwMCIvPg0KPC9zdmc+DQo=);
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+    -webkit-transform: translate(-100%, 0);
+    -moz-transform: translate(-100%, 0);
+    -ms-transform: translate(-100%, 0);
+    -o-transform: translate(-100%, 0);
+  }
+}
+@media (max-width: 1600px) {
+  .marquee {
+    padding: 41px 0 41px;
+  }
+}
+@media (max-width: 767px) {
+  .marquee {
+    padding: 41px 0 40px;
+  }
+  .marquee .marquee-items {
+    animation: marquee 20s linear infinite;
+  }
+  .marquee .marquee-items .item {
+    padding: 0 75px;
+  }
+  .marquee .marquee-items .item:after {
+    width: 33.025px;
+    height: 38.134px;
+    margin-top: -19px;
+  }
+}

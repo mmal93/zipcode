@@ -1,0 +1,18 @@
+{
+    "name": "acf/youtube-slider",
+    "title": "Youtube Slider",
+    "description": "A custom youtube slider section",
+    "style": [ "file:./youtube-slider.css" ],
+    "category": "zipcode",
+    "icon": "slides",
+    "keywords": ["list", "category", "youtube-slider"],
+    "viewScript": ["grt-youtube-popup", "swiper-js", "jQuery", "corp-site-home"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "youtube-slider.php"
+    },
+    "supports": {
+        "className": true,
+        "anchor"   : true
+    }
+}

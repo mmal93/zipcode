@@ -1,0 +1,138 @@
+.our-values-box {
+    background: var(--Color-neutrals-white);
+    border-radius: 45px;
+    margin-top: -60px;
+    padding: 92px 0 69px;
+    position: relative;
+    z-index: 1
+}
+
+.our-values-box .section-title {
+    max-width: 300px
+}
+
+.our-values-box .our-values-items {
+    align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 50px
+}
+
+@media(max-width:1199px) {
+    .our-values-box .our-values-items {
+        gap: 50px 0;
+        margin: 0 -20px;
+        padding-left: 0
+    }
+}
+
+.our-values-box .our-values-items .items-col {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 73px;
+    margin-top: 144px;
+    width: 50%
+}
+
+.our-values-box .our-values-items .items-col:last-child {
+    gap: 80px;
+    margin-top: -120px
+}
+
+@media(max-width:767px) {
+    .our-values-box .our-values-items .items-col {
+        gap: 50px;
+        margin-top: 50px;
+        width: 100%
+    }
+
+    .our-values-box .our-values-items .items-col:last-child {
+        gap: 50px;
+        margin-top: 0
+    }
+}
+
+.our-values-box .our-values-items .item {
+    margin-left: auto;
+    margin-right: 0;
+    padding: 0 30px 0 46px;
+    width: 100%
+}
+
+@media(max-width:1199px) {
+    .our-values-box .our-values-items .item {
+        padding: 0 20px
+    }
+}
+
+.our-values-box .our-values-items .item .column-image {
+    display: flex;
+    flex-wrap: wrap
+}
+
+.our-values-box .our-values-items .item .image-first {
+    width: 42.665%
+}
+
+.our-values-box .our-values-items .item .image-second {
+    margin-left: auto;
+    width: 54.112%
+}
+
+.our-values-box .our-values-items .item .image-inner {
+    position: relative
+}
+
+.our-values-box .our-values-items .item .image-inner img {
+    height: 100%;
+    vertical-align: top;
+    width: 100%
+}
+
+.our-values-box .our-values-items .item .image-inner img.img-default {
+    left: 0;
+    object-fit: cover;
+    position: absolute;
+    top: 0
+}
+
+.our-values-box .our-values-items .item .column-title {
+    margin-top: 26px
+}
+
+@media(max-width:1600px) {
+    .our-values-box .container {
+        max-width: 1235px
+    }
+
+    .our-values-box .content {
+        max-width: 418px
+    }
+}
+
+@media(max-width:1199px) {
+    .our-values-box {
+        padding: 81px 0 50px
+    }
+
+    .our-values-box .column-box {
+        gap: 66px
+    }
+}
+
+@media(max-width:767px) {
+    .our-values-box {
+        border-radius: 30px
+    }
+
+    .our-values-box .content {
+        margin-right: 0;
+        max-width: 100%
+    }
+
+    .our-values-box .content .btn {
+        height: auto;
+        padding: 12px 45px 10px 17px;
+        width: 100%
+    }
+}

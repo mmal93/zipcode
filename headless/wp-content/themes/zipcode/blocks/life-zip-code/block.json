@@ -1,0 +1,17 @@
+{
+    "name": "acf/life-zip-code",
+    "title": "Life Zip Code",
+    "description": "A custom banner section",
+    "style": [ "file:./life-zip-code.css" ],
+    "category": "zipcode",
+    "icon": "align-pull-right",
+    "keywords": ["list", "category", "life-zip-code", "image", "text"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "life-zip-code.php"
+    },
+    "supports": {
+        "className": true,
+        "anchor"   : true
+    }
+}

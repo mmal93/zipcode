@@ -1,0 +1,17 @@
+{
+    "name": "acf/text-center-with-link",
+    "title": "Text - Center with link",
+    "description": "A custom text section",
+    "style": [ "file:./text-center-with-link.css" ],
+    "category": "zipcode",
+    "icon": "editor-aligncenter",
+    "keywords": ["center", "text", "background"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "text-center-with-link.php"
+    },
+    "supports": {
+        "className": true,
+        "anchor"   : true
+    }
+}

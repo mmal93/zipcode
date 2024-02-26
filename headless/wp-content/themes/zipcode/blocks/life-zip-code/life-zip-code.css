@@ -1,0 +1,82 @@
+.careers-life {
+    background-image: url('./careers-life-bkg.jpg');
+}
+
+.careers-life.careers-section {
+    border-radius: 45px 45px 0 0;
+    padding: 73px 0 127px;
+    margin-top: -42px;
+}
+
+.careers-life h2 {
+    color: #ffffff;
+}
+
+.careers-life .life-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 16px;
+    position: relative;
+}
+
+.careers-life .section-content {
+    margin-top: 51px;
+    position: relative;
+}
+
+.careers-life .life-gallery .item .item-image img {
+    vertical-align: top;
+    height: 414px;
+}
+
+.careers-life .gallery-icon {
+    position: absolute;
+}
+
+.careers-life .gallery-icon .image-background {
+    background-repeat: no-repeat;
+}
+
+.careers-life .gallery-icon.gallery-icon-row .image-background {
+    display: block;
+    background-image: url('./gallery-box-icon-row.svg');
+    width: 464px;
+    height: 122px;
+}
+
+.careers-life .gallery-icon.gallery-icon-col .image-background {
+    display: block;
+    background-image: url('./gallery-box-icon-col.svg');
+    width: 123px;
+    height: 464px;
+}
+
+.careers-life .gallery-icon.gallery-icon-row {
+    right: -22px;
+    top: -12px;
+    width: 39.9%;
+}
+
+.careers-life .gallery-icon.gallery-icon-col {
+    bottom: -25px;
+    left: -11px;
+    width: 10.6%;
+}
+
+.acf-block-preview .careers-life .life-gallery .item {
+    width: 32%;
+}
+
+.acf-block-preview .careers-life .life-gallery .item .item-image img {
+    height: auto;
+}
+
+@media screen and (max-width: 1600.98px) {
+    .careers-life .container {
+        max-width: 1235px;
+    }
+
+    .careers-life .life-gallery .item .item-image img {
+        height: 288px;
+    }
+}

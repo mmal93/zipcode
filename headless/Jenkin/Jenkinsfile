@@ -1,0 +1,29 @@
+pipeline {
+    agent {
+        label 'aht-pt-01'
+    }
+    environment {
+        DIR = '/mnt/M_ONEXT_WORDPRESS_MAASI2404ZIP'
+    }
+    stages {
+        stage('change permission') {
+            steps {
+                    sh 'sudo /bin/chown aht ${DIR} -R'
+                    sh 'sudo /bin/chgrp aht ${DIR} -R'
+                }
+            }
+        stage('Check out') {
+            steps {
+                dir("${DIR}") {
+                    git branch: 'develop', credentialsId: 'gitlab', url: 'https://gitlab.arrowhitech.co/0_PT_MYNT/M_ONEXT_WORDPRESS_MAASI2404ZIP.git'
+                }
+            }
+        }
+        stage('revoke permission') {
+            steps {
+                    sh 'sudo /bin/chown www-data ${DIR} -R'
+                    sh 'sudo /bin/chgrp www-data ${DIR} -R'
+                }
+            }
+        }
+    }

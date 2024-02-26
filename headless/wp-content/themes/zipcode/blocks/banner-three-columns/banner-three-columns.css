@@ -1,0 +1,101 @@
+.our-culture-box {
+    background: #e1e1e1;
+    border-radius: 45px;
+    margin-top: -60px;
+    padding: 96px 0 134px;
+    position: relative;
+    z-index: 1
+}
+
+.our-culture-box .column-box {
+    display: flex;
+    flex-wrap: wrap
+}
+
+.our-culture-box .column-box .column-title {
+    padding-right: 20px;
+    width: 30.8%
+}
+
+.our-culture-box .column-box .column-image {
+    margin-top: 46px;
+    width: 18.3%
+}
+
+.our-culture-box .column-box .column-content {
+    margin-left: auto;
+    margin-right: -8px;
+    margin-top: 155px;
+    width: 41.35%
+}
+
+.our-culture-box .content {
+    margin-left: auto;
+    margin-right: 5.1%;
+    max-width: 469px
+}
+
+.our-culture-box .title {
+    align-self: stretch;
+    color: #000;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 128%;
+    margin-top: 0
+}
+
+.our-culture-box .description {
+    color: #232323;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: .28px;
+    line-height: 25px;
+    margin-bottom: 40px
+}
+
+@media(max-width:1600px) {
+    .our-culture-box .container {
+        max-width: 1235px
+    }
+
+    .our-culture-box .content {
+        max-width: 418px
+    }
+}
+
+@media(max-width:1199px) {
+    .our-culture-box .column-box .column-title {
+        width: 50%
+    }
+
+    .our-culture-box .column-box .column-image {
+        margin-left: auto;
+        margin-top: 0;
+        max-width: 212px;
+        width: 40%
+    }
+
+    .our-culture-box .column-box .column-content {
+        margin-right: 0;
+        margin-top: 50px;
+        width: 100%
+    }
+}
+
+@media(max-width:767px) {
+    .our-culture-box {
+        border-radius: 30px
+    }
+
+    .our-culture-box .content {
+        margin-right: 0;
+        max-width: 100%
+    }
+
+    .our-culture-box .content .btn {
+        height: auto;
+        padding: 12px 45px 10px 17px;
+        width: 100%
+    }
+}

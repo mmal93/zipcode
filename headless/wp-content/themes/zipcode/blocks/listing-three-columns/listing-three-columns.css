@@ -1,0 +1,67 @@
+.available-positions {
+    background-image: url('./careers-life-bkg.jpg');
+}
+
+.available-positions.careers-section {
+    border-radius: 45px;
+    color: #fff;
+    margin-top: -59px;
+    padding: 98px 0 114px
+}
+
+.available-positions .section-title h2 {
+    font-family: 'Tiempos Headline';
+}
+
+.available-positions .container {
+    max-width: 1450px
+}
+
+@media(max-width:1600px) {
+    .available-positions .container {
+        max-width: 1085px
+    }
+}
+
+.available-positions .available-items {
+    --gap: 71px;
+    --columns: 4;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 53px var(--gap);
+    margin-top: 98px;
+    width: 100%
+}
+
+@media(max-width:1600px) {
+    .available-positions .available-items {
+        --columns: 3
+    }
+}
+
+@media(max-width:1024px) {
+    .available-positions .available-items {
+        --columns: 2;
+        --gap: 50px;
+        gap: 50px var(--gap)
+    }
+}
+
+@media(max-width:767px) {
+    .available-positions .available-items {
+        --columns: 1
+    }
+}
+
+.available-positions .available-items .item {
+    border-top: 1px solid #fff;
+    letter-spacing: .2px;
+    padding-top: 17px;
+    width: calc(100%/var(--columns) - var(--gap) + var(--gap)/var(--columns))
+}
+
+.available-positions .available-items .content {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 35px
+}

@@ -1,0 +1,185 @@
+.our-teams-wrapper .swiper-slide:nth-child(n+4) {
+  display: none;
+}
+.about-our-teams {
+  border-radius: 45px;
+  background: var(--Color-neutrals-white);
+  position: relative;
+  z-index: 1;
+}
+.about-our-teams .box-image .content {
+  margin-bottom: 60px;
+}
+
+.our-teams {
+  padding-top: 7px;
+  padding-bottom: 184px;
+}
+.our-teams .container {
+  max-width: 1732px;
+}
+
+.our-teams-wrapper {
+  overflow: hidden;
+}
+.our-teams-wrapper .swiper {
+  overflow: visible;
+}
+.our-teams-wrapper .swiper .swiper-button-prev, .our-teams-wrapper .swiper .swiper-button-next {
+  top: 0;
+  right: 0;
+  margin-top: -87px;
+  left: auto;
+}
+.our-teams-wrapper .swiper .swiper-button-prev {
+  margin-right: 67px;
+}
+.our-teams-wrapper .item-image img {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  width: 100%;
+  vertical-align: top;
+}
+.our-teams-wrapper .item-inner .item-info {
+  position: absolute;
+  bottom: 0;
+  color: #fff;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 31px;
+  padding: 32px 37px;
+  max-width: 416px;
+  opacity: 0;
+  transition: all 0.35s;
+}
+.our-teams-wrapper .item-inner .item-info p {
+  margin-top: 0;
+}
+.our-teams-wrapper .item-inner .item-info p:last-child {
+  margin-bottom: 0;
+}
+.our-teams-wrapper .item-inner:hover .item-info {
+  opacity: 1;
+}
+.our-teams-wrapper .item-content {
+  margin-top: 32px;
+  transition: all 0.35s;
+}
+.our-teams-wrapper .item-content .item-name {
+  margin: 0 0 5px;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25.157px;
+}
+.our-teams-wrapper .item-content .item-position {
+  font-family: "Tiempos Headline";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16.771px;
+}
+.our-teams-wrapper .item-inner .item-image .bg {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 0.35s;
+  opacity: 0;
+}
+.our-teams-wrapper .item-inner:hover .item-image .bg {
+  opacity: 1;
+}
+.our-teams-wrapper .item-image {
+  position: relative;
+}
+.our-teams-wrapper .section-heading {
+  max-width: 500px;
+}
+.our-teams-wrapper .section-heading h2 {
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 46px;
+  margin-bottom: 46px;
+}
+.our-teams-wrapper .description {
+  font-size: 16px;
+  letter-spacing: -.2px;
+  line-height: 17px;
+}
+@media (max-width: 1600px) {
+  .about-our-teams {
+    border-radius: 30px;
+  }
+  .our-teams {
+    padding-top: 0px;
+    padding-bottom: 137px;
+  }
+  .our-teams .container {
+    max-width: 1240px;
+  }
+  .our-teams-wrapper .section-heading h2 {
+    margin-top: 26px;
+    margin-bottom: 31px;
+  }
+  .our-teams-wrapper .swiper .swiper-button-prev,
+  .our-teams-wrapper .swiper .swiper-button-next {
+    margin-top: -93px;
+  }
+  .our-teams-wrapper .item-content {
+    margin-top: 19px;
+  }
+  .our-teams-wrapper .our-teams-wrapper .item-inner .item-info {
+    line-height: 25.157px;
+    padding: 38px 40px 38px 32px;
+  }
+}
+@media (max-width: 767px) {
+  .our-teams {
+    overflow: hidden;
+    padding-bottom: 62px;
+  }
+  .our-teams-wrapper {
+    overflow: visible;
+  }
+  .our-teams-wrapper .section-heading h2 {
+    margin-top: 23px;
+    margin-bottom: 39px;
+    padding-right: 10px;
+  }
+  .our-teams-wrapper .swiper {
+    padding-bottom: 67px;
+  }
+  .our-teams-wrapper .swiper .swiper-button-prev, .our-teams-wrapper .swiper .swiper-button-next {
+    top: auto;
+    margin-top: 0;
+    bottom: 0;
+    width: 27px;
+    height: 25px;
+    background-size: contain;
+  }
+  .our-teams-wrapper .swiper .swiper-button-prev {
+    margin-right: 85px;
+  }
+  .our-teams-wrapper .item-content .item-name {
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px;
+    margin-bottom: 8px;
+    margin-top: 40px;
+  }
+  .our-teams-wrapper .item-content .item-position {
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+  }
+}

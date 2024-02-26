@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkzipcode=self.webpackChunkzipcode||[]).push([[1494],{1494:function(e,a,n){n.r(a);var t=n(7294);a.default=e=>{let{attributes:a}=e;const{background:n,heading:c}=a;return t.createElement("div",{className:"section section-banner"},t.createElement("div",{className:"inner-section",style:{backgroundImage:"url("+n.src+")"}},t.createElement("h1",{className:"heading"},c)))}}}]);
+//# sourceMappingURL=1494-1b20df3db96d802c25a2.js.map

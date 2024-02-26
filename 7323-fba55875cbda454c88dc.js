@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkzipcode=self.webpackChunkzipcode||[]).push([[7323],{7323:function(e,n,c){c.r(n);var t=c(7294);n.default=e=>{const{innerHTML:n}=e;return t.createElement("div",{className:"wpg-block wpg-b_video",dangerouslySetInnerHTML:{__html:n}})}}}]);
+//# sourceMappingURL=7323-fba55875cbda454c88dc.js.map

@@ -1,0 +1,17 @@
+{
+    "name": "acf/banner-text-has-animation",
+    "title": "Banner text has animation",
+    "description": "A custom text section",
+    "style": [ "file:./banner-text-has-animation.css" ],
+    "category": "zipcode",
+    "icon": "controls-repeat",
+    "keywords": ["center", "text", "background"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "banner-text-has-animation.php"
+    },
+    "supports": {
+        "className": true,
+        "anchor"   : true
+    }
+}

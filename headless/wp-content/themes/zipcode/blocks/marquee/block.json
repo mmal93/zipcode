@@ -1,0 +1,17 @@
+{
+    "name": "acf/marquee",
+    "title": "Marquee",
+    "description": "A custom text section",
+    "style": [ "file:./marquee.css" ],
+    "category": "zipcode",
+    "icon": "controls-repeat",
+    "keywords": ["center", "text", "background"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "marquee.php"
+    },
+    "supports": {
+        "className": true,
+        "anchor"   : true
+    }
+}

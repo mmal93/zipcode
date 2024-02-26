@@ -1,0 +1,70 @@
+.section-explore {
+  padding: 250px 0
+}
+
+.section-explore .col-left {
+  width: 25%
+}
+
+.section-explore .col-right {
+  padding-left: 20px;
+  width: 75%
+}
+
+.section-explore .col-right .col-text {
+  width: 65%;
+}
+.section-explore .col-right .col-image {
+  width: 35%;
+}
+
+.section-explore .heading-text {
+  margin-bottom: 120px
+}
+
+.section-explore .heading-text h4 {
+  font-family: Buenos Aires;
+  font-size: 36px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 46px;
+  text-align: left
+}
+
+.section-explore p {
+  font-family: Buenos Aires;
+  line-height: 25px
+}
+
+.section-explore a,.section-explore p {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: .02em;
+  text-align: left
+}
+
+.section-explore a {
+  border: 1px solid #0068ff;
+  border-radius: 71px;
+  font-family: Tiempos Headline;
+  line-height: 14px;
+  padding: 16px 12px
+}
+.image-box img {
+  height: 100%;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.image-box {
+  height: 0;
+  padding-bottom: 100%;
+  position: relative;
+}
+.image-box .bg {
+  z-index: 0;
+  background-repeat: no-repeat;
+  top: calc(100% - 100px);
+}
